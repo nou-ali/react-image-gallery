@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import ImageCard from "./components/ImageCard";
+
 
 function App() {
   const [images, setImages] = useState([]);
@@ -20,7 +22,9 @@ function App() {
   return (
     <div className="container mx-auto">
       <div className="grid grid-cols-3 gap-4">
-
+      {images.map(image => (
+        <ImageCard key={image.id} image={} />
+      ))}
       </div>
     </div>
   );
