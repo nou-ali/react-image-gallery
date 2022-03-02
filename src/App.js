@@ -17,11 +17,11 @@ function App() {
         setIsLoading(false);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [term]);
 
   return (
     <div className="container mx-auto">
-          <ImageSearch/>
+          <ImageSearch searchText={(text) => setTerm(text)}/>
       {isLoading ? <h1 className="text-6xl text-center mx-auto mt-32">Loading...</h1> : 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-6 ">
           {images.map((image) => (
