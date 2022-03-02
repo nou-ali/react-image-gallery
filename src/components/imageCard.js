@@ -1,11 +1,11 @@
 import React from "react";
 
-const imageCard = (props) => {
+const imageCard = ({image}) => {
   return (
     <div>
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
         <img
-          src={props.image.webformatURL}
+          src={image.webformatURL}
           alt=""
           className="w-full"
         />
