@@ -5,7 +5,9 @@ const imageCard = ({ image }) => {
   return (
     <div>
       <div className="rounded overflow-hidden shadow-lg object-cover">
+        <a href={image.webformatURL}>
         <img src={image.webformatURL} alt="" className="h-48 max-h-full w-full" />
+        </a>
         <div className="px-6 py-4">
           <div className=" mt-1 text-center font-bold text-indigo-500 text-xl mb-2">
             Image by: {image.user}
