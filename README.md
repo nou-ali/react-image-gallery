@@ -2,10 +2,6 @@
 
 Simple gallery with images from the pixabay API. Tailwind css is built into workflow with postcss and autoprefixer.
 
-## Usage
-Add your Pixabay API key to .env - https://pixabay.com/api/docs/
-
-```
 # Install dependencies
 npm install
 
