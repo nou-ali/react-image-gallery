@@ -4,7 +4,7 @@ const imageCard = ({ image }) => {
   const tags = image.tags.split(",");
   return (
     <div>
-      <div className="rounded overflow-hidden shadow-lg object-cover">
+      <div className="rounded overflow-hidden shadow-lg object-fit">
         <a href={image.webformatURL}>
         <img src={image.webformatURL} alt="" className="h-48 max-h-full w-full" />
         </a>
